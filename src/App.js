@@ -1,4 +1,5 @@
 import logo from './logo.svg';
+import { Button } from '@salesforce/design-system-react';
 import './App.css';
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
+          <Button label="Salesforce Button"/>
         </p>
         <a
           className="App-link"
