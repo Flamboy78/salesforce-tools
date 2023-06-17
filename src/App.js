@@ -1,24 +1,19 @@
-import logo from './logo.svg';
-import { Button } from '@salesforce/design-system-react';
+import { Button, Avatar} from '@salesforce/design-system-react';
+
+import Tab from './components/Tab/Tab'
 import './App.css';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
-          <Button label="Salesforce Button"/>
+          <Avatar
+            imgSrc="https://lightningdesignsystem.com/assets/images/avatar2.jpg"
+          ></Avatar>
+          <Button className="slds-button slds-button_neutral" variant="brand" label="Salesforce Button"/>
+          <Tab/>
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
       </header>
     </div>
   );
